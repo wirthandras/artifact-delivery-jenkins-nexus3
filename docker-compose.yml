@@ -1,0 +1,24 @@
+version: '3.7'
+services:
+        jenkins:
+                image: "wajenkins:1.0"
+                container_name: jenkins
+                ports:
+                        - "8080:8080"
+                        - "50000:50000"
+                volumes:
+                        - ~/jenkins:/var/jenkins_home
+                        - /var/run/docker.sock:/var/run/docker.sock
+                        - /usr/bin/docker:/usr/bin/docker
+
+        nexus:
+                image: "sonatype/nexus3"
+                container_name: nexus
+                ports:
+                        - "8081:8081"
+                        - "8082:8082"
+                volumes:
+                        - nexus-data:/nexus-data
+volumes:
+      nexus-data:
+      jenkins:
