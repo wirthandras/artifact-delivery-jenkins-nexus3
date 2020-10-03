@@ -40,5 +40,5 @@ Unfortunately actually I didnt found the way to establish Docker registry automa
 You can start Jenkins and Nexus3 with the running the start.sh bash script.
 
 ```
-sudo ./start.sh
+./start.sh
 ```
