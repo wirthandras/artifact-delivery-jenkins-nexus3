@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 sudo apt -y install curl
-sudo snap -y install docker
+sudo snap install docker
 
 #install docker compose (https://docs.docker.com/compose/install/)
 sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
