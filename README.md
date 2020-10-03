@@ -43,10 +43,18 @@ You can start Jenkins and Nexus3 with the running the start.sh bash script.
 ./start.sh
 ```
 
-Jenkins Initial password
+# Jenkins Initial password
 
-After jenkins started the starter password can be examine from jenkins container as the following way in command line:
+After jenkins container started the initial password can be get from jenkins container as the following way in command line:
 
 ```
 docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+```
+
+# Nexus Repository initial admin password
+
+After nexus container started the starter admin password can be get from nexus container as the following way in command line:
+
+```
+docker exec nexus cat /nexus-data/admin.password
 ```
