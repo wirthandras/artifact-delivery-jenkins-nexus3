@@ -14,13 +14,20 @@ The jenkins UI exposed on localhost:8080, the nexus repository UI on localhost:8
 
 My Playground is an Ubuntu 20.04 LTS OS.
 
-I installed the Docker on this machine for this purpose and the Git to pull this project from Github.
+I installed the Curl, Docker, Docker compose on this machine for this purpose and the Git to pull this project from Github.
 
 Open a terminal and run
 ```
+sudo apt install curl
 sudo apt install git
 sudo apt install docker
+
+#install docker compose (https://docs.docker.com/compose/install/)
+sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 ```
+
 
 # Applications
 
