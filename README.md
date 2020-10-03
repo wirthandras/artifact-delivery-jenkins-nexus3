@@ -40,5 +40,13 @@ Unfortunately actually I didnt found the way to establish Docker registry automa
 You can start Jenkins and Nexus3 with the running the start.sh bash script.
 
 ```
-sudo ./start.sh
+./start.sh
+```
+
+Jenkins Initial password
+
+After jenkins started the starter password can be examine from jenkins container as the following way in command line:
+
+```
+docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 ```
