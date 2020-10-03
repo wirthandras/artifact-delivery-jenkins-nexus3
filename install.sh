@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 sudo apt install curl
-sudo apt install git
 sudo apt install docker
 
 #install docker compose (https://docs.docker.com/compose/install/)
