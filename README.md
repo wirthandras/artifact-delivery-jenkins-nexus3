@@ -16,18 +16,15 @@ My Playground is an Ubuntu 20.04 LTS OS.
 
 I installed the Curl, Docker, Docker compose on this machine for this purpose and the Git to pull this project from Github.
 
-Open a terminal and run
+Install Git if not exists.
 ```
-sudo apt install curl
 sudo apt install git
-sudo apt install docker
-
-#install docker compose (https://docs.docker.com/compose/install/)
-sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
-sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 ```
-
+After that you can install the required tools with install.sh
+```
+sudo chmod +x install.sh
+sudo ./install.sh
+```
 
 # Applications
 
@@ -40,17 +37,8 @@ Unfortunately actually I didnt found the way to establish Docker registry automa
 
 # Starting the applications
 
-You can start the whole process with the running the start.sh bash script.
+You can start Jenkins and Nexus3 with the running the start.sh bash script.
 
-After git pull you can give execute right with:
-```
-chmod +x start.sh
-```
-
-After you can start the process like this:
 ```
 sudo ./start.sh
 ```
-
-
-
